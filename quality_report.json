@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-01-31T19:01:33.625853",
+  "dq_assessment": {
+    "metrics": {
+      "completeness": {
+        "value": 1.0,
+        "missing_values": 0,
+        "total_values": 17490,
+        "threshold": 0.95,
+        "pass": true
+      },
+      "duplicate_rate": {
+        "value": 1.0,
+        "duplicate_count": 0,
+        "total_records": 2915,
+        "threshold": 0.98,
+        "pass": true
+      },
+      "format_validity": {
+        "value": 1.0,
+        "valid_count": 2915,
+        "total_count": 2915,
+        "threshold": 0.99,
+        "pass": true
+      }
+    },
+    "status": "PASS"
+  },
+  "ddq_assessment": {
+    "metrics": {
+      "category_balance": {
+        "kl_divergence": 0.6017776684667451,
+        "threshold": 0.1,
+        "pass": false
+      },
+      "sentiment_distribution": {
+        "kl_divergence": 0.046360276457311986,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "temporal_consistency": {
+        "kl_divergence": 0.2306810980454581,
+        "threshold": 0.1,
+        "pass": false
+      }
+    },
+    "status": "FAIL"
+  },
+  "cleaning_summary": {
+    "operations": [
+      {
+        "operation": "remove_duplicates",
+        "removed": 592
+      },
+      {
+        "operation": "fix_invalid_timestamps",
+        "removed": 1957
+      },
+      {
+        "operation": "handle_missing_drop",
+        "removed": 5036
+      }
+    ],
+    "total_operations": 3
+  },
+  "overall_status": "FAIL"
+}
