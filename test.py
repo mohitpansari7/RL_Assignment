@@ -884,13 +884,13 @@ def main():
     report = generate_report(dq_metrics_clean, ddq_metrics, cleaning_log)
     
     # Save report
-    report_path = '/Users/mohitpansari/Downloads/workspace/RL_Assignment/quality_report.json'
+    report_path = '/home/claude/rlhf_retail_chatbot/part1_dq_ddq/quality_report.json'
     with open(report_path, 'w') as f:
         json.dump(report, f, indent=2)
     print(f"✓ Report saved to: {report_path}")
     
     # Save cleaned data
-    cleaned_data.to_csv('/Users/mohitpansari/Downloads/workspace/RL_Assignment/cleaned_data.csv', 
+    cleaned_data.to_csv('/home/claude/rlhf_retail_chatbot/part1_dq_ddq/cleaned_data.csv', 
                         index=False)
     print(f"✓ Cleaned data saved to: cleaned_data.csv")
     

@@ -1,0 +1,35 @@
+{
+  "random_policy": {
+    "avg_reward": 0.2357207116096772,
+    "std_reward": 0.3277081141225618,
+    "purchase_rate": 0.507,
+    "escalation_rate": 0.484,
+    "avg_turns": 2.883
+  },
+  "value_function": {
+    "theta": [
+      -0.2727044933287479,
+      0.019340810659149242,
+      -0.0043648745345855056,
+      0.38947495983508795,
+      0.3899978117966091,
+      0.37707892398340653,
+      0.42421465738072045,
+      -0.018776229576360413,
+      0.00668294475024908,
+      -0.062060561514746725
+    ],
+    "feature_names": [
+      "satisfaction",
+      "is_vip",
+      "is_regular",
+      "Electronics",
+      "Clothing",
+      "Home",
+      "Sports",
+      "mentioned_issue",
+      "asked_price",
+      "turn_progress"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "random_policy": {
+    "avg_reward": 0.2357207116096772,
+    "std_reward": 0.3277081141225618,
+    "purchase_rate": 0.507,
+    "escalation_rate": 0.484,
+    "avg_turns": 2.883
+  }
+}
